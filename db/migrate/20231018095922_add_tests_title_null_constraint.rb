@@ -2,6 +2,7 @@ class AddTestsTitleNullConstraint < ActiveRecord::Migration[6.1]
   def change
     change_column_null :tests, :title, false
     change_column_default :tests, :level, from: '', to: 0
+    add_foreign_key :tests, :categories, column: :level
   end
 
   # def up

@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2023_10_18_103959) do
 
   create_table "answers", force: :cascade do |t|
-    t.string "correct", default: "default value"
+    t.boolean "correct", default: true
     t.integer "question_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -46,4 +46,7 @@ ActiveRecord::Schema.define(version: 2023_10_18_103959) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "answers", "questions"
+  add_foreign_key "questions", "tests"
+  add_foreign_key "tests", "categories", column: "level"
 end
