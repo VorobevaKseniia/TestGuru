@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TestGuru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestGuru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231018095922_add_tests_title_null_constraint.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231018095922_add_tests_title_null_constraint.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231018101218_add_questions_body_null_constraint.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231018101218_add_questions_body_null_constraint.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231018103959_add_answers_correct_null_constraint.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231018103959_add_answers_correct_null_constraint.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +130,7 @@
       <workItem from="1697103563304" duration="10991000" />
       <workItem from="1697154351988" duration="2621000" />
       <workItem from="1697565174873" duration="2980000" />
-      <workItem from="1697651497154" duration="2406000" />
+      <workItem from="1697651497154" duration="2818000" />
     </task>
     <servers />
   </component>
