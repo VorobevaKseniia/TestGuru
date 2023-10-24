@@ -15,9 +15,9 @@ categories = Category.create!([
 
 # TESTS title, level
 tests = Test.create!([
-                       {title: 'Basics of HTML', level: 1, category_id: 1},
-                       {title: 'Basics of Ruby', level: 2, category_id: 2},
-                       {title: 'Basics of SQL', level: 2, category_id: 3}
+                       {title: 'Basics of HTML', level: 1, category_id: categories[0].id},
+                       {title: 'Basics of Ruby', level: 2, category_id: categories[1].id},
+                       {title: 'Basics of SQL', level: 2, category_id: categories[2].id}
                      ])
 
 # USERS name, status
