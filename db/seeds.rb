@@ -27,29 +27,29 @@ users = User.create!([
                        {name: 'Kate', status: :user}
                      ])
 # USER_TESTS
-us_tes = UserTest.create!(user_id: 1, test_id: 1)
-us_tes2 = UserTest.create!(user_id: 1, test_id: 2)
+us_tes = UserTest.create!(user_id: users[0].id, test_id: tests[0].id)
+us_tes2 = UserTest.create!(user_id: users[0].id, test_id: tests[1].id)
 
 # QUESTIONS body
 questions = Question.create!([
-                               {body: 'What tag is used to move to a new line?', test_id: 1},
-                               {body: 'What does the attribute "href" contain?', test_id: 1},
+                               {body: 'What tag is used to move to a new line?', test_id: tests[0].id},
+                               {body: 'What does the attribute "href" contain?', test_id: tests[0].id},
 
-                               {body: 'Which method allows to translate a string to lower case?', test_id: 2},
-                               {body: 'What is the name of the most popular Ruby framework for the web?', test_id: 2},
+                               {body: 'Which method allows to translate a string to lower case?', test_id: tests[1].id},
+                               {body: 'What is the name of the most popular Ruby framework for the web?', test_id: tests[1].id},
 
-                               {body: 'What query can be used to retrieve a list of all databases?', test_id: 3},
-                               {body: 'Which keyword is used to cancel a transaction?', test_id: 3}
+                               {body: 'What query can be used to retrieve a list of all databases?', test_id: tests[2].id},
+                               {body: 'Which keyword is used to cancel a transaction?', test_id: tests[2].id}
                              ])
 
 # ANSWERS body, correct
 answers = Answer.create!([
-                           {body: '<br/>', question_id: 1},
-                           {body: 'URL of the page to which the redirection will take place', question_id: 2},
+                           {body: '<br/>', question_id: questions[0].id},
+                           {body: 'URL of the page to which the redirection will take place', question_id: questions[1].id},
 
-                           {body: 'downcase()', question_id: 3},
-                           {body: 'Rails', question_id: 4},
+                           {body: 'downcase()', question_id: questions[2].id},
+                           {body: 'Rails', question_id: questions[3].id},
 
-                           {body: 'SHOW DATABASES', question_id: 5},
-                           {body: 'ROLLBACK', question_id: 6}
+                           {body: 'SHOW DATABASES', question_id: questions[4].id},
+                           {body: 'ROLLBACK', question_id: questions[5].id}
                          ])
