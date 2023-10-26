@@ -1,10 +1,13 @@
-# Создайте метод класса в модели Test, который возвращает отсортированный по убыванию массив
-# названий всех Тестов у которых Категория называется определённым образом
-# название категории передается в метод в качестве аргумента).
-
 class Test < ApplicationRecord
+  belongs_to :category
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
+  has_many :questions
+  has_many :user_tests
+
+
+
   def self.sort_by_category(category)
-    Test.joins("INNER JOIN categories ON categories.id = tests.category_id")
-        .where(categories: { title: category }).order(title: :desc).pluck(:title)
+    joins(:category).where(category: { title: category }).order(title: :desc).pluck(:title)
   end
+
 end
