@@ -14,9 +14,9 @@ categories = Category.create!([
                               ])
 # USERS name, status
 users = User.create!([
-                       {name: 'Ivan', status: :user},
-                       {name: 'Elene', status: :admin},
-                       {name: 'Kate', status: :user}
+                       {name: 'Ivan', email: 'ivan@gmail.com'},
+                       {name: 'Elene', email: 'elena@gmail.com'},
+                       {name: 'Kate', email: 'kate@gmail.com'}
                      ])
 
 # TESTS title, level
