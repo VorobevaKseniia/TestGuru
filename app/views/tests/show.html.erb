@@ -1,0 +1,27 @@
+<p>
+  <strong>Title:</strong>
+  <%= @test.title %>
+</p>
+<p>
+  <strong>Level:</strong>
+  <%= @test.level %>
+</p>
+<p>
+  <%= link_to 'New question', new_test_question_path(@test) %>
+</p>
+
+<% if @test.questions.present? %>
+  <table>
+    <tr>
+      <th>Questions</th>
+      <th colspan = '3'>Actions</th>
+    </tr>
+    <tr>
+      <th><%= render @test.questions %></th>
+    </tr>
+  </table>
+<% else %>
+  <p>Error</p>
+<% end %>
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>

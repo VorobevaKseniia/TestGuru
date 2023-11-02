@@ -1,28 +1,50 @@
 class TestsController < ApplicationController
-  before_action :find_test, only: %i[show]
+  before_action :find_test, only: %i[show edit destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
   def index
     @tests = Test.all
-    render plain: "All tests"
   end
 
   def show
-    render inline: '<%= @test.title %>'
+    @test = Test.find(params[:id])
   end
 
   def new
-    # @test = Test.new
+    @test = Test.new
   end
 
   def create
-    @test = Test.create(test_params)
-    render plain: test.inspect
+    @test = Test.new(test_params)
+    if @test.save
+      redirect_to @test
+    else
+      render :new
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    @test = Test.find(params[:id])
+    if @test.update(test_params)
+      redirect_to @test
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @test = Test.find(params[:id])
+
+    @test.destroy
+    redirect_to tests_path
   end
 
   private
   def test_params
-    params.require(:test).permit(:title, :level)
+    params.require(:test).permit(:title, :level, :category_id)
   end
 
   def find_test
