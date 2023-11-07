@@ -4,6 +4,4 @@ class Question < ApplicationRecord
 
   validates :body, presence: true
 
-  scope :correct, -> { where(correct: true) }
-
 end

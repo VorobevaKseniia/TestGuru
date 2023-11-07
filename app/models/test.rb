@@ -1,8 +1,9 @@
 class Test < ApplicationRecord
-  belongs_to :category
-  belongs_to :author, class_name: 'User'
+  has_many :test_passages
+  has_many :users, through: :test_passages
   has_many :questions
-  has_many :user_tests
+  belongs_to :category
+  belongs_to :author, class_name: 'User', foreign_key: :user_id, optional: true
 
   scope :simple_tests, -> {where(level: 0..1)}
   scope :medium_tests, -> {where(level: 2..4)}

@@ -1,0 +1,12 @@
+<h1><%= @test_passage.test.title %> Test was Completed!</h1>
+<% if @test_passage.result >= 85 %>
+  <h3 class="passed">Test passed</h3>
+  <p>Your result: <%= @test_passage.result %> %</p>
+<% else %>
+  <h3 class="failed">Test failed</h3>
+  <p>Your result: <%= @test_passage.result %> %</p>
+<% end %>
+<p><%= link_to 'Back to tests', tests_path %></p>
+
+
+

@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/test_passages/result.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/test_passages/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tests_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/_question.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_question.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tests/_test.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/_test.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +40,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2Weqni9GZoMkunbY9rHJfwAQQPV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +52,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fifth__step&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;eighth__step&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/vorobevakseniaigorevna/Desktop/Ruby on Rails/TestGuru&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -135,10 +156,23 @@
       <workItem from="1697728559417" duration="3523000" />
       <workItem from="1698083669977" duration="20308000" />
       <workItem from="1698414916432" duration="6850000" />
+      <workItem from="1699293539637" duration="350000" />
+      <workItem from="1699366636320" duration="5345000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
