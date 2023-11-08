@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/test_passages/result.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/test_passages/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/_question.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_question.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tests/_test.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/_test.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +139,7 @@
       <workItem from="1698083669977" duration="20308000" />
       <workItem from="1698414916432" duration="6850000" />
       <workItem from="1699293539637" duration="350000" />
-      <workItem from="1699366636320" duration="5345000" />
+      <workItem from="1699366636320" duration="5923000" />
     </task>
     <servers />
   </component>
