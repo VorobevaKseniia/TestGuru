@@ -1,6 +1,6 @@
 <h1><%= @test_passage.test.title %> Test was Completed!</h1>
 
-<% if @test_passage.passed?(@test_passage.result) %>
+<% if @test_passage.passed? %>
   <h3 class="passed">Test passed</h3>
 <% else %>
   <h3 class="failed">Test failed</h3>

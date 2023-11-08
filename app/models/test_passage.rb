@@ -26,8 +26,8 @@ class TestPassage < ApplicationRecord
     (100*self.correct_questions)/self.test.questions.count
   end
 
-  def passed?(result)
-    result >= TEST_THRESHOLD
+  def passed?
+    self.result >= TEST_THRESHOLD
   end
 
   private
