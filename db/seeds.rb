@@ -27,10 +27,6 @@ tests = Test.create!([
                      ])
 
 
-# USER_TESTS
-us_tes = UserTest.create!(user_id: users[0].id, test_id: tests[0].id)
-us_tes2 = UserTest.create!(user_id: users[0].id, test_id: tests[1].id)
-
 # QUESTIONS body
 questions = Question.create!([
                                {body: 'What tag is used to move to a new line?', test_id: tests[0].id},
