@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to tests_path
+      redirect_to_the_requested_page
     else
       flash.now[:alert] = 'Are you a Guru? Verify your email and password, please!'
       render :new
@@ -21,4 +21,12 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to login_path
   end
+
+  private
+
+  def redirect_to_the_requested_page
+    redirect_to session[:forwarding_url] || tests_path
+    session.delete(:forwarding_url)
+  end
+
 end

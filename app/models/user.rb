@@ -8,10 +8,8 @@ class User < ApplicationRecord
   has_many :tests, through: :test_passages
   has_many :created_tests, class_name: 'Test', foreign_key: 'author_id'
 
-  # validates :name, presence: true
-  validates :email, format: { with: EMAIL_FORMAT }, uniqueness: true  # , presence: true
-  # validates :password, presence: true, if: Proc.new { |user| user.password_digest.blank? }
-  # validates :password, confirmation: true
+  validates :name, presence: true
+  validates :email, presence: true, format: { with: EMAIL_FORMAT }, uniqueness: true
 
   has_secure_password
 

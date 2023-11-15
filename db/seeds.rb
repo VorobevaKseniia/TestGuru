@@ -41,14 +41,14 @@ questions = Question.create!([
 
 # ANSWERS body, correct
 answers = Answer.create!([
-                           {body: '<br/>', question_id: questions[0].id},
+                           {body: '<br/>', correct: true,question_id: questions[0].id},
                            {body: '<p/>', question_id: questions[0].id},
                            {body: '<a/>', question_id: questions[0].id},
-                           {body: 'URL of the page to which the redirection will take place', question_id: questions[1].id},
+                           {body: 'URL of the page to which the redirection will take place', correct: true, question_id: questions[1].id},
 
-                           {body: 'downcase()', question_id: questions[2].id},
-                           {body: 'Rails', question_id: questions[3].id},
+                           {body: 'downcase()', correct: true, question_id: questions[2].id},
+                           {body: 'Rails', correct: true, question_id: questions[3].id},
 
-                           {body: 'SHOW DATABASES', question_id: questions[4].id},
-                           {body: 'ROLLBACK', question_id: questions[5].id}
+                           {body: 'SHOW DATABASES', correct: true, question_id: questions[4].id},
+                           {body: 'ROLLBACK', correct: true, question_id: questions[5].id}
                          ])
