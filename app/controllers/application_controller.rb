@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
   private
 
   def authenticate_user!
-    session[:forwarding_url] = request.url if request.get? && !logged_in?
     unless current_user
+      session[:forwarding_url] = request.url if request.get?
       return redirect_to login_path, alert: 'Are you a Guru? Verify your email and password, please!'
     end
     cookies[:email] = current_user.email
