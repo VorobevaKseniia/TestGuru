@@ -11,7 +11,19 @@
   </head>
 
   <body>
+  <article class = 'enter'>
+    <%= link_to 'Sing up', signup_path %> |
+    <%= link_to 'Log in', login_path %> |
+    <%= link_to 'Exit', exit_path %>
+  </article>
+
+  <% if logged_in? %>
+    <p><%= link_to 'TestGuru', tests_path %></p>
+    <p class = 'nav user'>Welcome, <b><%= current_user.name %></b> Guru</p>
+  <% end %>
+
   <%= yield %>
+
   </body>
 
   <footer>
