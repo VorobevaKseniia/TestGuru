@@ -1,6 +1,11 @@
-require 'digest/sha1'
-
 class User < ApplicationRecord
+
+  devise :database_authenticatable,
+         :registerable,
+         :recoverable,
+         :rememberable,
+         :validatable,
+         :confirmable
 
   EMAIL_FORMAT = /\A\S+@[a-z]+\.[a-z]+\z/
 
@@ -8,10 +13,7 @@ class User < ApplicationRecord
   has_many :tests, through: :test_passages
   has_many :created_tests, class_name: 'Test', foreign_key: 'author_id'
 
-  validates :name, presence: true
-  validates :email, presence: true, format: { with: EMAIL_FORMAT }, uniqueness: true
-
-  has_secure_password
+  validates :email, format: { with: EMAIL_FORMAT }, uniqueness: true
 
   def list_of_tests(level)
     tests.where(level: level)
