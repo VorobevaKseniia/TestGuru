@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   skip_before_action :verify_authenticity_token, :authenticate_user!
+  after_action :after_sign_in_path_for, only: :create
   def new
   end
 
@@ -9,7 +10,6 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      current_user.is_a?(Admin) ? admin_tests_path : redirect_to_the_requested_page
     else
       flash.now[:alert] = 'Are you a Guru? Verify your email and password, please!'
       render :new
