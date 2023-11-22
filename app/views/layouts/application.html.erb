@@ -11,16 +11,15 @@
   </head>
 
   <body>
-  <article class = 'enter'>
-    <%= link_to 'Sing up', signup_path %> |
-    <%= link_to 'Log in', login_path %> |
-    <%= link_to 'Exit', exit_path %>
-  </article>
 
-  <% if logged_in? %>
-    <p><%= link_to 'TestGuru', tests_path %></p>
-    <p class = 'nav user'>Welcome, <b><%= current_user.name %></b> Guru</p>
+  <% if user_signed_in? %>
+    <p class="nav user">
+      Welcome, <b><%= current_user.last_name %> <%= current_user.first_name %></b> Guru |
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+    </p>
   <% end %>
+
+  <%= render 'shared/flash' %>
 
   <%= yield %>
 
