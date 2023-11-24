@@ -1,0 +1,44 @@
+ru:
+  activerecord:
+    models:
+      admin: "Администратор"
+      answer: "Ответ"
+      category: "Категория"
+      question: "Вопрос"
+      test: "Тест"
+      user: "Пользователь"
+
+    attributes:
+      answer:
+        body: "Ответ"
+        correct: "Правильный ответ"
+        question_id: "ID вопроса"
+
+      category:
+        title: "Название"
+
+      question:
+        body: "Вопрос"
+        test_id: "ID теста"
+
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "ID категории"
+        author_id: "ID автора"
+
+      user:
+        first_name: "Имя"
+        last_name: "Фамилия"
+        email: "Почта"
+        type: "Тип"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        remember_me: "Запомнить меня"
+
+    errors:
+      messages:
+        blank: "не может быть пустым"
+        taken: "уже существует"
+        invalid: "имеет неверное значение или формат"
+        answers_count: "Вопрос может содержать 4 и менее ответов"

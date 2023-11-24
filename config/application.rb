@@ -17,11 +17,12 @@ module TestGuru
     # in config/environments, which are processed later.
     #
     config.time_zone = "Berlin"
+
     # где библиотека I18n должна искать наши переводы
     I18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}')]
     I18n.available_locales = [:en, :ru]
-    # устанавка локали по умолчанию
-    # I18n.default_locale = :ru
+
+    config.i18n.default_locale = :ru
 
     # config.eager_load_paths << Rails.root.join("extras")
   end
