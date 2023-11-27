@@ -1,34 +1,116 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 ru:
-  # ???
-  привет: "Привет мир"
+  hello: "Привет мир"
+
+  helpers:
+    submit:
+      create: "Создать %{model}"
+      update: "Обновить %{model}"
+    select:
+      prompt: "Выберите пункт"
+
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+
+      answer:
+        body: "Ответ"
+        correct: "Правильный ответ"
+
+      question:
+        body: "Вопрос"
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружена %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+
+  tests:
+    index:
+      header: "Доступные тесты"
+
+  test_passages:
+    result:
+      header: "Тест %{title} успешно завершён!"
+
+  admin:
+    actions:
+      show: "Показать"
+      edit: "Редактировать"
+      delete: "Удалить"
+
+    links:
+      new: "Новый тест"
+      back: "Назад"
+      edit: "Редактировать"
+      logout: "Выход"
+      new_question: "Новый вопрос"
+      new_answer: "Новый ответ"
+
+    nav:
+      panel: "Панель администратора TestGuru"
+      welcome: "Добро пожаловать, %{f} %{l} Guru"
+
+    tests:
+      index:
+        header: "Доступные тесты"
+        title: "Название"
+        level: "Уровень"
+        questions: "Кол-во вопросов"
+        actions: "Действия"
+      edit:
+        header: "Редактировать %{title} тест"
+      new:
+        header: "Создать новый тест"
+      show:
+        title: "Название: %{title}"
+        level: "Уровень: %{level}"
+        questions: "Вопросы"
+        actions: "Действия"
+      create:
+        success: "Тест успешно создан."
+      update:
+        success: "Тест успешно обновлен."
+      destroy:
+        success: "Тест успешно удален."
+      test:
+        confirm_delete: "Вы уверены, что хотите удалить тест?"
+
+    questions:
+      show:
+        header: "Вопрос %{title} теста"
+        answers: "Ответы"
+      create:
+        success: "Вопрос был успешно создан"
+      update:
+        success: "Вопрос был успешно обновлен"
+      destroy:
+        success: "Вопрос был успешно удален"
+      question:
+        confirm_delete: "Вы уверены, что хотите удалить вопрос?"
+
+    answers:
+      new:
+        new_answer: "Новый ответ"
+      edit:
+        edit_answer: "Редактировать ответ"
+      show:
+        question: "Вопрос: %{body}"
+        answer: "Ответ: %{body}"
+        correct: "Правильный ответ: %{correct}"
+      create:
+        success: "Ответ был успешно создан"
+      update:
+        success: "Ответ был успешно обновлен"
+      destroy:
+        success: "Ответ был успешно удален"
+      answer:
+        confirm_delete: "Вы уверены, что хотите удалить ответ?"
+
+  tests_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru!"

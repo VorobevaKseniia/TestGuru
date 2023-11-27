@@ -5,10 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TestGuru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestGuru.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/activerecord.en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/activerecord.ru.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/devise.ru.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/tests_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/tests_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/_nav.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/_nav.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/answers/_answer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/answers/_answer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/answers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/answers/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/answers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/answers/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/answers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/answers/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/questions/_question.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/questions/_question.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/questions/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/questions/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/questions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/_test.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/_test.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_errors.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_errors.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/test_passages/result.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/test_passages/result.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +77,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "tenth__step",
+    "git-widget-placeholder": "eleventh__step",
     "last_opened_file_path": "/Users/vorobevakseniaigorevna/Desktop/Ruby on Rails/TestGuru/app/views/admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
