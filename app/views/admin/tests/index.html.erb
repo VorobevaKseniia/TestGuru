@@ -1,20 +1,27 @@
-<h1><%= t('.header') %></h1>
+<div class="container">
 
-<p>
-<%= link_to t('admin.links.new'), new_admin_test_path %>
-</p>
+  <h1><%= t('.header') %></h1>
 
-<% if @tests.present? %>
-  <table>
-    <tr>
-      <th><%= t('.title') %></th>
-      <th><%= t('.level') %></th>
-      <th><%= t('.questions') %></th>
-      <th colspan="3"><%= t('.actions') %></th>
-    </tr>
+  <p class="fw-bold">
+  <%= link_to t('admin.links.new'), new_admin_test_path, class: "link-secondary text-decoration-none" %>
+  </p>
 
-    <%= render @tests %>
-  </table>
-<% else %>
-  <p>You haven't tests in progress</p>
-<% end %>
+  <div class="col-6 align-self-start">
+    <% if @tests.present? %>
+      <table class="table table-borderless table-hover table-sm">
+        <thead>
+          <tr>
+            <th scope="col"><%= t('.title') %></th>
+            <th scope="col"><%= t('.level') %></th>
+            <th scope="col"><%= t('.questions') %></th>
+            <th scope="col"><%= t('.actions') %></th>
+          </tr>
+        </thead>
+        <%= render @tests %>
+      </table>
+    <% else %>
+      <p>You haven't tests in progress</p>
+    <% end %>
+  </div>
+</div>
+

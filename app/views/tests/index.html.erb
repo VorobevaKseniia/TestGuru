@@ -1,16 +1,21 @@
-<h1><%= t('.header') %></h1>
+<div class="container">
+  <h1><%= t('.header') %></h1>
 
-<% if @tests.present? %>
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Level</th>
-      <th>Questions</th>
-      <th>Actions</th>
-    </tr>
-
-    <%= render @tests %>
-  </table>
-<% else %>
-  <p>You haven't tests in progress</p>
-<% end %>
+  <div class="col-6 align-self-start">
+    <% if @tests.present? %>
+      <table class="table table-borderless">
+        <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Level</th>
+          <th scope="col">Questions</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <%= render @tests %>
+      </table>
+    <% else %>
+      <p>You haven't tests in progress</p>
+    <% end %>
+  </div>
+</div>
