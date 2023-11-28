@@ -1,34 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>TestGuru</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'shared/nav' %>
 
-  <% if user_signed_in? %>
-    <p class="nav user">
-      Welcome, <b><%= current_user.last_name %> <%= current_user.first_name %></b> Guru |
-      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-    </p>
-  <% end %>
+    <div class="container">
+      <%= render 'shared/flash' %>
+      <%= yield %>
+    </div>
 
-  <%= render 'shared/flash' %>
-
-  <%= yield %>
-
+    <%= render 'shared/footer' %>
   </body>
-
-  <footer>
-    <br>
-    <p>Created by Kseniia <%= current_year %></p>
-    <p><%= github_url('VorobevaKseniia', 'TestGuru') %> project is designed to create, manage and execute various tests.</p>
-    <p>Learning project at <a href="http://www.thinknetica.com/" target="_blank">Thinknetica</a> online school</p>
-  </footer>
 </html>

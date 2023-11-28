@@ -36,6 +36,9 @@ gem 'devise', '~> 4.0'
 # LOCALIZATION
 gem 'rails-i18n'
 
+# UI
+gem 'jquery-rails'
+gem 'bootstrap', '~> 5.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,7 +1,0 @@
-<div class="nav nav-admin">
-  <span class="nav-admin title"><%= t('.panel') %></span>
-
-  <div class="nav-admin user"> <%= t('.welcome', f: current_user.last_name, l: current_user.first_name) %> |
-    <%= link_to t('admin.links.logout'), destroy_user_session_path, method: :delete %>
-  </div>
-</div>
