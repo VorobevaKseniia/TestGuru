@@ -36,8 +36,10 @@ ru:
   test_passages:
     result:
       header: "Тест %{title} успешно завершён!"
-    gist:
-      success: "Gist успешно создан! %{url}"
+
+  gists:
+    create:
+      success: "Gist успешно создан! Ваш Gist %{link}"
       failure: "Во время сохранения gist произошла ошибка"
 
   admin:
