@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.constants" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TestGuru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestGuru.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/gists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gists_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/test_passages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/test_passages_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/gist_question_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/gist_question_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/test_passages/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/test_passages/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/clients/git_hub_client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/clients/git_hub_client.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +175,7 @@
       <workItem from="1704308916035" duration="36000" />
       <workItem from="1704712990675" duration="802000" />
       <workItem from="1704713804421" duration="1700000" />
+      <workItem from="1704717041859" duration="5790000" />
     </task>
     <servers />
   </component>

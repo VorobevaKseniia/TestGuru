@@ -29,4 +29,8 @@ class GistQuestionService
     content.join("\n")
   end
 
+  def success?
+    @client.last_response.status == 201
+  end
+
 end
