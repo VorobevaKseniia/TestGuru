@@ -10,6 +10,10 @@ class GistQuestionService
     @client.create_gist(gist_params)
   end
 
+  def success?
+    @client.last_response.status == 201
+  end
+
   private
 
   def gist_params
@@ -27,10 +31,6 @@ class GistQuestionService
     content = [@question.body]
     content += [@question.answers.pluck(:body)]
     content.join("\n")
-  end
-
-  def success?
-    @client.last_response.status == 201
   end
 
 end

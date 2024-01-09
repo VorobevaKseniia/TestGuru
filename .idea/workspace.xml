@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/gists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gists_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/gist_question_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/gist_question_service.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +178,9 @@
       <workItem from="1704712990675" duration="802000" />
       <workItem from="1704713804421" duration="1700000" />
       <workItem from="1704717041859" duration="5790000" />
+      <workItem from="1704728850233" duration="4979000" />
+      <workItem from="1704735531935" duration="7098000" />
+      <workItem from="1704818936845" duration="2572000" />
     </task>
     <servers />
   </component>
