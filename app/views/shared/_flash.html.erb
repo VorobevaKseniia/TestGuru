@@ -1,13 +1,3 @@
 <% flash.each do |key, message| %>
-  <% case key %>
-<% when "notice" %>
-    <% type = "success" %>
-  <% when "alert" %>
-    <% type = "danger" %>
-  <% when "plain" %>
-    <% type = "info" %>
-  <% else %>
-    <% type = "primary" %>
-  <% end %>
-  <%= content_tag :p, message, class: "alert alert-#{type}", role: "alert" %>
+  <%= content_tag :p, message, class: "alert alert-#{key}", role: "alert" %>
 <% end %>
