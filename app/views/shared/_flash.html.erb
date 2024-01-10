@@ -1,9 +1,9 @@
 <% flash.each do |key, message| %>
   <% case key %>
-  <% when "notice" %>
+<% when "notice" %>
     <% type = "success" %>
   <% when "alert" %>
-    <% type = "warning" %>
+    <% type = "danger" %>
   <% when "plain" %>
     <% type = "info" %>
   <% else %>

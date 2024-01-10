@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/flash.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/flash.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/gists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gists_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/gist_question_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/gist_question_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tests_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/gists/_gist.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/gists/_gist.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +189,8 @@
       <workItem from="1704717041859" duration="5790000" />
       <workItem from="1704728850233" duration="4979000" />
       <workItem from="1704735531935" duration="7098000" />
-      <workItem from="1704818936845" duration="2572000" />
+      <workItem from="1704818936845" duration="2904000" />
+      <workItem from="1704888028563" duration="8933000" />
     </task>
     <servers />
   </component>
