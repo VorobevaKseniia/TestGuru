@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
     else
-      flash.now[:alert] = 'Are you a Guru? Verify your email and password, please!'
+      flash.now[:info] = 'Are you a Guru? Verify your email and password, please!'
       render :new
     end
   end

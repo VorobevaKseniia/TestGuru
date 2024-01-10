@@ -36,6 +36,11 @@ en:
     result:
       header: "The %{title} test was successfully completed!"
 
+  gists:
+    create:
+      success: "Gist successfully created! Your gist %{link}"
+      failure: "An error occurred while saving gist"
+
   admin:
     actions:
       show: "Show"
@@ -61,6 +66,9 @@ en:
         level: "Level"
         questions: "No. of questions"
         actions: "Actions"
+        question: "Question"
+        user: "User"
+        gist_url: "Link"
       edit:
         header: "Edit %{title} test"
       new:
@@ -110,7 +118,11 @@ en:
       answer:
         confirm_delete: "Are you sure, delete the answer?"
 
-
   tests_mailer:
     completed_test:
-      subject: You just completed the TestGuru test!"
+      subject: "You just completed the TestGuru test!"
+
+  services:
+    gist_params:
+      gist_title: "A question about %{title} from TestGuru"
+

@@ -19,6 +19,17 @@
         </thead>
         <%= render @tests %>
       </table>
+
+      <table class="table table-borderless table-hover table-sm">
+        <thead>
+        <tr>
+          <th scope="col"><%= t('.question') %></th>
+          <th scope="col"><%= t('.user') %></th>
+          <th scope="col"><%= t('.gist_url') %></th>
+        </tr>
+        </thead>
+        <%= render @gists %>
+      </table>
     <% else %>
       <p>You haven't tests in progress</p>
     <% end %>
