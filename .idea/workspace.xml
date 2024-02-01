@@ -5,24 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/flash.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/typography/icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/utilities/sorting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/flash.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/answers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/questions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/gists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gists_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/gists/_gist.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/gists/_gist.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,8 +60,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;thirteenth__step&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vorobevakseniaigorevna/Desktop/Ruby on Rails/TestGuru/app/views/admin&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fourteenth__step&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vorobevakseniaigorevna/Desktop/Ruby on Rails/TestGuru/app/javascript&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,15 +76,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/javascript" />
       <recent name="$PROJECT_DIR$/app/views/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascript" />
+      <recent name="$PROJECT_DIR$/app/javascript/utilities" />
+      <recent name="$PROJECT_DIR$/app/javascript/packs" />
       <recent name="$PROJECT_DIR$/app/views/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/admin" />
-      <recent name="$PROJECT_DIR$/app/views/admin/gists" />
-      <recent name="$PROJECT_DIR$/app/views/admin/tests" />
-      <recent name="$PROJECT_DIR$/app/controllers" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.TestGuru">
@@ -191,6 +196,12 @@
       <workItem from="1704735531935" duration="7098000" />
       <workItem from="1704818936845" duration="2904000" />
       <workItem from="1704888028563" duration="8933000" />
+      <workItem from="1705333149996" duration="2589000" />
+      <workItem from="1706201099166" duration="647000" />
+      <workItem from="1706201993994" duration="447000" />
+      <workItem from="1706204397497" duration="522000" />
+      <workItem from="1706204931617" duration="397000" />
+      <workItem from="1706205379295" duration="3280000" />
     </task>
     <servers />
   </component>

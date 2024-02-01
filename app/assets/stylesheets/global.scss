@@ -1,0 +1,14 @@
+.pointer{
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}
+
+// check password
+.valid{
+  border: 2px solid lightseagreen;
+}
+.invalid{
+  border: 2px solid #ef2727;
+}
