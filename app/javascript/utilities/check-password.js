@@ -6,21 +6,23 @@ function checkPassword() {
     const check = document.querySelector('.octicon-check')
     const x = document.querySelector('.octicon-x')
 
-        function changeBorder() {
+    function changeBorder() {
 
         const passValue = pass.value
         const confirmPassValue = confirmPass.value
 
+        if (passValue === '' || confirmPassValue === '') {
+            confirmPass.classList.remove('valid')
+            confirmPass.classList.remove('invalid')
+            check.classList.add('hide')
+            x.classList.add('hide')
+            return
+        }
         if (passValue === confirmPassValue) {
             pass.classList.add('valid')
             confirmPass.classList.remove('invalid')
             confirmPass.classList.add('valid')
             check.classList.remove('hide')
-            x.classList.add('hide')
-        } else if (passValue !== confirmPassValue && confirmPassValue === '') {
-            confirmPass.classList.remove('valid')
-            confirmPass.classList.remove('invalid')
-            check.classList.add('hide')
             x.classList.add('hide')
         } else {
             pass.classList.remove('valid')

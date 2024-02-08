@@ -9,7 +9,8 @@ function sortRowsByTitle(){
 
   // NodeList
   // https://developer.mozilla.org/ru/docs/Web/API/NodeList
-  var rows = table.querySelectorAll('tr')
+  var rows = table.querySelectorAll('tbody')
+
   var sortedRows = []
 
   // select all table rows expect the first one which is the header
@@ -27,12 +28,11 @@ function sortRowsByTitle(){
     sortedRows.sort(compareRowsDesc)
     this.querySelector('.octicon-arrow-down').classList.remove('hide')
     this.querySelector('.octicon-arrow-up').classList.add('hide')
-
   }
 
   var sortedTable = document.createElement('table')
 
-  sortedTable.classList.add('table')
+  sortedTable.classList.add('table', 'table-borderless', 'table-hover')
   sortedTable.appendChild(rows[0])
 
   for(var i = 0; i < sortedRows.length; i++) {
