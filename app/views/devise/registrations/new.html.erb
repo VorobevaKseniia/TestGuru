@@ -27,12 +27,14 @@
             <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %> characters minimum)</em>
             <% end %><br>
-            <%= f.password_field :password, class: 'form-control', placeholder: 'Enter password' %>
+            <%= f.password_field :password, class: 'form-control pass', placeholder: 'Enter password' %>
           </div>
           <br>
           <div class="field">
             <%= f.label :password_confirmation %><br>
-            <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Confirm password' %>
+            <%= f.password_field :password_confirmation, class: 'form-control new-pass', placeholder: 'Confirm password' %>
+            <%= octicon 'check', class: 'text-success hide' %>
+            <%= octicon 'x', class: 'text-danger hide' %>
           </div>
           <br>
           <div class="actions">

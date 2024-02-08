@@ -6,33 +6,40 @@
   <%= link_to t('admin.links.new'), new_admin_test_path, class: "link-secondary text-decoration-none" %>
   </p>
 
-  <div class="col-6 align-self-start">
-    <% if @tests.present? %>
-      <table class="table table-borderless table-hover table-sm">
-        <thead>
-          <tr>
-            <th scope="col"><%= t('.title') %></th>
-            <th scope="col"><%= t('.level') %></th>
-            <th scope="col"><%= t('.questions') %></th>
-            <th scope="col"><%= t('.actions') %></th>
-          </tr>
-        </thead>
-        <%= render @tests %>
-      </table>
 
-      <table class="table table-borderless table-hover table-sm">
-        <thead>
+    <% if @tests.present? %>
+      <table class="table table-borderless table-hover">
         <tr>
-          <th scope="col"><%= t('.question') %></th>
-          <th scope="col"><%= t('.user') %></th>
-          <th scope="col"><%= t('.gist_url') %></th>
+          <th class="sort-by-title pointer">
+            <%= t('.title') %>
+            <%= octicon 'arrow-up', class: 'text-success hide' %>
+            <%= octicon 'arrow-down', class: 'text-success hide' %>
+          </th>
+          <th><%= t('.level') %></th>
+          <th><%= t('.questions') %></th>
+          <th><%= t('.actions') %></th>
         </tr>
-        </thead>
-        <%= render @gists %>
+        <%= render @tests %>
       </table>
     <% else %>
       <p>You haven't tests in progress</p>
     <% end %>
+
+    <div class="col-6 align-self-start">
+      <% if @gists.present? %>
+        <table class="table table-borderless table-hover table-sm">
+          <thead>
+          <tr>
+            <th scope="col"><%= t('.question') %></th>
+            <th scope="col"><%= t('.user') %></th>
+            <th scope="col"><%= t('.gist_url') %></th>
+          </tr>
+          </thead>
+          <%= render @gists %>
+        </table>
+      <% else %>
+        <p>You haven't gists</p>
+      <% end %>
   </div>
 </div>
 

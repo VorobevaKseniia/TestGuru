@@ -3,15 +3,17 @@
 
   <div class="col-6 align-self-start">
     <% if @tests.present? %>
-      <table class="table table-borderless">
-        <thead>
+      <table class="table table-borderless table-hover">
         <tr>
-          <th scope="col">Title</th>
+          <th scope="col" class="sort-by-title pointer">
+            Title
+            <%= octicon 'arrow-up', class: 'text-success hide' %>
+            <%= octicon 'arrow-down', class: 'text-success hide' %>
+          </th>
           <th scope="col">Level</th>
           <th scope="col">Questions</th>
           <th scope="col"></th>
         </tr>
-        </thead>
         <%= render @tests %>
       </table>
     <% else %>
