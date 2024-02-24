@@ -9,6 +9,13 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import '../utilities/sorting'
 import '../utilities/check-password'
+import '../utilities/form_inline'
+import '../utilities/progress-bar'
+
+var jQuery = require("jquery");
+// import jQuery from "jquery";
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
 
 Rails.start()
 Turbolinks.start()

@@ -82,6 +82,8 @@ en:
         success: "Test was successfully created."
       update:
         success: "Test was successfully updated."
+      form_inline:
+        submit: "OK"
       destroy:
         success: "Test was successfully deleted."
       test:
