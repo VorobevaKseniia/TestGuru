@@ -14,9 +14,9 @@ categories = Category.create!([
                               ])
 # USERS name, status
 users = User.create!([
-                       {email: 'ivan@gmail.com', password: 'ivan'},    # name: 'Ivan',
-                       {email: 'elena@gmail.com', password: 'elena'},  # name: 'Elene',
-                       {email: 'kate@gmail.com', password: 'kate'}     # name: 'Kate',
+                       {email: 'ivan@gmail.com', password: 'ivan11'},    # name: 'Ivan',
+                       {email: 'elena@gmail.com', password: 'elena1'},  # name: 'Elene',
+                       {email: 'kate@gmail.com', password: 'kate11'}     # name: 'Kate',
                      ])
 
 # TESTS title, level
