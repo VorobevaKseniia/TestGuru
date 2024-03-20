@@ -25,6 +25,8 @@ module TestGuru
 
     config.i18n.default_locale = :ru
 
+    config.assets.initialize_on_precompile = false
+
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.autoload_paths << "#{Rails.root}/lib/clients"
