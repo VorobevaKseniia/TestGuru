@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TestGuru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestGuru.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,6 +206,8 @@
       <workItem from="1709830332828" duration="842000" />
       <workItem from="1709831998724" duration="1018000" />
       <workItem from="1709907381577" duration="1790000" />
+      <workItem from="1711267256419" duration="1593000" />
+      <workItem from="1712142499771" duration="2925000" />
     </task>
     <servers />
   </component>
@@ -222,6 +226,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TestGuru@TestGuru.rcov" NAME="TestGuru Coverage Results" MODIFIED="1704713591289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TestGuru" />
+    <SUITE FILE_PATH="coverage/TestGuru@TestGuru.rcov" NAME="TestGuru Coverage Results" MODIFIED="1710976289479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TestGuru" />
   </component>
 </project>
