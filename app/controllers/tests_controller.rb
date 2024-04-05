@@ -10,7 +10,14 @@ class TestsController < ApplicationController
 
   def start
     current_user.tests.push(@test)
-    redirect_to current_user.test_passage(@test)
+    if current_user.test_passage(@test).current_question_id.present?
+      redirect_to current_user.test_passage(@test)
+    else
+      @tests = Test.all
+      flash.now[:alert] = 'The test is in development and is temporarily unavailable to take.'
+      render :index
+
+    end
   end
 
   private

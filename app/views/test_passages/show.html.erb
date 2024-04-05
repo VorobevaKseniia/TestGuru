@@ -19,6 +19,8 @@
   <p><%= link_to 'Gist Question', gists_path(test_passage_id: @test_passage.id), method: :post %></p>
   <p><%= form.submit 'Next',
                      class: 'bar',
+                     id: 'check',
+                     disabled: true,
                      data: {question_number: @test_passage.question_number,
                             number_of_questions: @test_passage.test.questions.count}
   %></p>
