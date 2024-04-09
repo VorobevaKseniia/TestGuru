@@ -9,6 +9,9 @@ class Test < ApplicationRecord
   scope :medium_tests, -> {where(level: 2..4)}
   scope :complex_tests, -> {where(level: 5..Float::INFINITY)}
 
+  scope :complete_tests, -> { joins(questions: :answers).group('tests.id') }
+
+
   scope :categorized_tests, -> (category) { joins(:category).where(category: { title: category }) }
 
   validates :title, presence: true, uniqueness: { scope: :level }
