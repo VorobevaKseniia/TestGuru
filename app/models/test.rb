@@ -9,7 +9,7 @@ class Test < ApplicationRecord
   scope :medium_tests, -> {where(level: 2..4)}
   scope :complex_tests, -> {where(level: 5..Float::INFINITY)}
 
-  scope :complete_tests, -> { joins(questions: :answers).group('tests.id') }
+  scope :complete_tests, -> { where(completed: true) }
 
 
   scope :categorized_tests, -> (category) { joins(:category).where(category: { title: category }) }
