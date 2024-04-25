@@ -6,6 +6,7 @@
     </td>
     <td class="align-middle" ><%= test_level(test) %></td>
     <td class="align-middle"><%= test.questions.count %></td>
+    <td class="align-middle"><%=  test.completed == true ? 'Тест готов' : 'Тест не готов' %></td>
     <td class="align-middle">
       <%= link_to t('admin.actions.show'), admin_test_path(test), class: "fw-bolder link-secondary text-decoration-none" %> |
       <%= link_to t('admin.actions.edit'), edit_admin_test_path(test),

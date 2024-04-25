@@ -1,5 +1,5 @@
 class Test < ApplicationRecord
-  has_many :test_passages
+  has_many :test_passages, dependent: :delete_all
   has_many :users, through: :test_passages
   has_many :questions
   belongs_to :category
@@ -8,6 +8,9 @@ class Test < ApplicationRecord
   scope :simple_tests, -> {where(level: 0..1)}
   scope :medium_tests, -> {where(level: 2..4)}
   scope :complex_tests, -> {where(level: 5..Float::INFINITY)}
+
+  scope :complete_tests, -> { where(completed: true) }
+
 
   scope :categorized_tests, -> (category) { joins(:category).where(category: { title: category }) }
 

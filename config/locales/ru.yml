@@ -29,10 +29,6 @@ ru:
         one: "Обнаружена %{count} ошибка"
         other: "Обнаружено %{count} ошибки"
 
-  tests:
-    index:
-      header: "Доступные тесты"
-
   test_passages:
     result:
       header: "Тест %{title} успешно завершён!"
@@ -66,6 +62,7 @@ ru:
         title: "Название"
         level: "Уровень"
         questions: "Кол-во вопросов"
+        completed: "Состояние теста"
         actions: "Действия"
         question: "Вопрос"
         user: "Пользователь"
