@@ -21,18 +21,4 @@ class Test < ApplicationRecord
     categorized_tests(category).order(title: :desc).pluck(:title)
   end
 
-  def time_out?
-    Time.now-self.timer*60 >= (self.timer*60).minutes.ago
-  end
-
-  # def countdown
-  #   t = Time.new(0)
-  #   time_in_seconds = self.timer*60 # change this value
-  #
-  #   time_in_seconds.downto(0) do |seconds|
-  #     (t + seconds).strftime('%H:%M:%S')
-  #     sleep 1
-  #   end
-  # end
-
 end
