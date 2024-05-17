@@ -11,7 +11,6 @@ class Test < ApplicationRecord
 
   scope :complete_tests, -> { where(completed: true) }
 
-
   scope :categorized_tests, -> (category) { joins(:category).where(category: { title: category }) }
 
   validates :title, presence: true, uniqueness: { scope: :level }
@@ -21,5 +20,19 @@ class Test < ApplicationRecord
   def self.sort_by_category(category)
     categorized_tests(category).order(title: :desc).pluck(:title)
   end
+
+  def time_out?
+    Time.now-self.timer*60 >= (self.timer*60).minutes.ago
+  end
+
+  # def countdown
+  #   t = Time.new(0)
+  #   time_in_seconds = self.timer*60 # change this value
+  #
+  #   time_in_seconds.downto(0) do |seconds|
+  #     (t + seconds).strftime('%H:%M:%S')
+  #     sleep 1
+  #   end
+  # end
 
 end
