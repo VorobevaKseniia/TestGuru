@@ -2,6 +2,7 @@ class TestsController < ApplicationController
 
   before_action :authenticate_user!
   before_action :find_test, only: %i[start]
+  before_action :set_badges, only: :index
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
   def index
@@ -9,6 +10,7 @@ class TestsController < ApplicationController
   end
 
   def start
+    @start = Time.now
     current_user.tests.push(@test)
     redirect_to current_user.test_passage(@test)
   end
@@ -21,6 +23,10 @@ class TestsController < ApplicationController
 
   def rescue_with_test_not_found
     render plain: 'Test was not found'
+  end
+
+  def set_badges
+    @badges = current_user.badges
   end
 
 end

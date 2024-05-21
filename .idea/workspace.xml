@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03601394-8627-40d2-8f8b-65603d10cdad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/assets/images/achievement_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/achievement_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/achievement_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/achievement_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin/badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/badges_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/admin/badges_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/badge.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/users_badge.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/badges/_badge.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/dragonfly.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240425172223_create_badges.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20240425183807_create_users_badges.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/admin/badges_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/badges.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/users_badges.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/badge_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/users_badge_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/tests_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tests_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/_test.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/_test.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/tests/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tests/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +84,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sixteenth__step&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;badge&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/vorobevakseniaigorevna/Desktop/Ruby on Rails/TestGuru/app/javascript/stylesheets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -206,6 +239,9 @@
       <workItem from="1709907381577" duration="1790000" />
       <workItem from="1711267256419" duration="1593000" />
       <workItem from="1712142499771" duration="23393000" />
+      <workItem from="1715970008943" duration="333000" />
+      <workItem from="1715970386591" duration="62000" />
+      <workItem from="1716139007656" duration="1162000" />
     </task>
     <servers />
   </component>

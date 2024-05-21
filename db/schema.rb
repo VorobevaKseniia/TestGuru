@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_04_09_183548) do
+ActiveRecord::Schema.define(version: 2024_04_27_105341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 2024_04_09_183548) do
     t.datetime "updated_at", precision: 6, null: false
     t.text "body", null: false
     t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+
+  create_table "badges", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "image_name"
+    t.string "rule", null: false
+    t.string "rule_value", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "categories", force: :cascade do |t|
@@ -68,6 +77,7 @@ ActiveRecord::Schema.define(version: 2024_04_09_183548) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "author_id", null: false
     t.boolean "completed", default: false
+    t.integer "timer"
     t.index ["author_id"], name: "index_tests_on_author_id"
     t.index ["category_id"], name: "index_tests_on_category_id"
     t.index ["title", "level"], name: "index_tests_on_title_and_level", unique: true
@@ -94,6 +104,15 @@ ActiveRecord::Schema.define(version: 2024_04_09_183548) do
     t.index ["type"], name: "index_users_on_type"
   end
 
+  create_table "users_badges", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "badge_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["badge_id"], name: "index_users_badges_on_badge_id"
+    t.index ["user_id"], name: "index_users_badges_on_user_id"
+  end
+
   add_foreign_key "answers", "questions"
   add_foreign_key "gists", "questions"
   add_foreign_key "gists", "users"
@@ -102,4 +121,6 @@ ActiveRecord::Schema.define(version: 2024_04_09_183548) do
   add_foreign_key "test_passages", "tests", on_delete: :cascade
   add_foreign_key "test_passages", "users"
   add_foreign_key "tests", "categories"
+  add_foreign_key "users_badges", "badges"
+  add_foreign_key "users_badges", "users"
 end

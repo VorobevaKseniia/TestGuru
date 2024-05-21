@@ -14,9 +14,9 @@ categories = Category.create!([
                               ])
 # USERS name, status
 users = User.create!([
-                       {email: 'ivan@gmail.com', password: 'ivan11'},    # name: 'Ivan',
-                       {email: 'elena@gmail.com', password: 'elena1'},  # name: 'Elene',
-                       {email: 'kate@gmail.com', password: 'kate11'}     # name: 'Kate',
+                       {email: 'ivan@gmail.com', password: 'ivan11', first_name: 'Ivan', last_name: 'Petrov', type: "Admin"},
+                       {email: 'elena@gmail.com', password: 'elena1', first_name: 'Elena', last_name: 'Smirnova'},
+                       {email: 'kate@gmail.com', password: 'kate11', first_name: 'Kate', last_name: 'Ivanova'}
                      ])
 
 # TESTS title, level
@@ -41,7 +41,7 @@ questions = Question.create!([
 
 # ANSWERS body, correct
 answers = Answer.create!([
-                           {body: '<br/>', correct: true,question_id: questions[0].id},
+                           {body: '<br/>', correct: true, question_id: questions[0].id},
                            {body: '<p/>', question_id: questions[0].id},
                            {body: '<a/>', question_id: questions[0].id},
                            {body: 'URL of the page to which the redirection will take place', correct: true, question_id: questions[1].id},
@@ -52,3 +52,21 @@ answers = Answer.create!([
                            {body: 'SHOW DATABASES', correct: true, question_id: questions[4].id},
                            {body: 'ROLLBACK', correct: true, question_id: questions[5].id}
                          ])
+
+# BADGES title, image_name, rule, rule_value
+badges = Badge.create!([
+                         # {title: "Вы успешно прошли все тесты из категории #{categories[0].title}",
+                         #  image_name: 'achievement_1',
+                         #  rule: "Необходимо пройти все тесты из категории #{categories[0].title}",
+                         #  rule_value: "#{tests.categorized_tests(categories[0]).count}"},
+                         {title: "Вы успешно прошли все тесты с уровнем #{tests[0].level}",
+                          image_name: 'achievement_2',
+                          rule: "Необходимо пройти все тесты с уровнем #{tests[0].level}",
+                          rule_value: "#{tests.level(1).count}"},
+                         {title: "Вы успешно прошли тест с первой попытки",
+                          image_name: 'achievement_3',
+                          rule: "Необходимо пройти тест с первой попытки",
+                          rule_value: "1"}
+                       ])
+
+

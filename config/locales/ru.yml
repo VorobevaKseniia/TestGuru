@@ -51,10 +51,31 @@ ru:
       logout: "Выход"
       new_question: "Новый вопрос"
       new_answer: "Новый ответ"
+      new_badge: "Новый значок"
 
     nav:
       panel: "Панель администратора TestGuru"
       welcome: "Добро пожаловать, %{f} %{l} Guru"
+
+    badges:
+      new:
+        header: "Создание нового значка"
+      create:
+        success: "Значок успешно создан!"
+      update:
+        success: "Значок успешно обновлен!"
+      destroy:
+        success: "Значок успешно удален!"
+        fail: "Произошел сбой при удалении."
+      show:
+        title: "Название: %{title}"
+        image: "Изображение: %{image}.png"
+        rule: "Правило: %{rule}"
+        rule_value: "Код правила: %{rule_value}"
+      edit:
+        header: "Редактировать %{title} значок"
+      badge:
+        confirm_delete: "Вы уверены, что хотите удалить значок?"
 
     tests:
       index:
@@ -62,11 +83,13 @@ ru:
         title: "Название"
         level: "Уровень"
         questions: "Кол-во вопросов"
+        timer: "Таймер (мин.)"
         completed: "Состояние теста"
         actions: "Действия"
         question: "Вопрос"
         user: "Пользователь"
         gist_url: "Ссылка"
+        image: "Изображение"
       edit:
         header: "Редактировать %{title} тест"
       new:
@@ -77,13 +100,13 @@ ru:
         questions: "Вопросы"
         actions: "Действия"
       create:
-        success: "Тест успешно создан."
+        success: "Тест успешно создан!"
       update:
-        success: "Тест успешно обновлен."
+        success: "Тест успешно обновлен!"
       form_inline:
         submit: "ОК"
       destroy:
-        success: "Тест успешно удален."
+        success: "Тест успешно удален!"
       test:
         confirm_delete: "Вы уверены, что хотите удалить тест?"
 
@@ -92,11 +115,11 @@ ru:
         header: "Вопрос %{title} теста"
         answers: "Ответы"
       create:
-        success: "Вопрос был успешно создан"
+        success: "Вопрос был успешно создан!"
       update:
-        success: "Вопрос был успешно обновлен"
+        success: "Вопрос был успешно обновлен!"
       destroy:
-        success: "Вопрос был успешно удален"
+        success: "Вопрос был успешно удален!"
       question:
         confirm_delete: "Вы уверены, что хотите удалить вопрос?"
 

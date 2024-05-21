@@ -20,4 +20,21 @@
       <p>You haven't tests in progress</p>
     <% end %>
   </div>
+
+  <div class="col-6 align-self-start">
+    <% if @badges.present? %>
+      <table class="table table-borderless table-hover table-sm">
+        <thead>
+        <tr>
+          <th scope="col"><%= t('.title') %></th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <%= render @badges %>
+      </table>
+    <% else %>
+      <p>You haven't Badges</p>
+    <% end %>
+  </div>
+
 </div>

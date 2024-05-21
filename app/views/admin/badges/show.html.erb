@@ -1,0 +1,7 @@
+<p><strong><%= t('.title', title: @badge.title) %></strong></p>
+<p><%= image_tag("#{@badge.image_name}.png", :size => 50) %></p>
+<p><%= t('.rule', rule: @badge.rule) %></p>
+<p><%= t('.rule_value', rule_value: @badge.rule_value) %></p>
+
+<%= link_to t('admin.links.edit'), edit_admin_badge_path(@badge) %> |
+<%= link_to t('admin.links.back'), admin_tests_path %>

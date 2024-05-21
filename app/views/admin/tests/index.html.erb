@@ -18,6 +18,7 @@
           </th>
           <th><%= t('.level') %></th>
           <th><%= t('.questions') %></th>
+          <th><%= t('.timer') %></th>
           <th><%=  t('.completed')%></th>
           <th><%= t('.actions') %></th>
         </tr>
@@ -27,7 +28,8 @@
       <p>You haven't tests in progress</p>
     <% end %>
 
-    <div class="col-6 align-self-start">
+  <div class="margin">
+    <div class="col-6 div-inline">
       <% if @gists.present? %>
         <table class="table table-borderless table-hover table-sm">
           <thead>
@@ -42,6 +44,29 @@
       <% else %>
         <p>You haven't gists</p>
       <% end %>
+    </div>
+
+    <div class="col-5 div-inline">
+      <% if @badges.present? %>
+
+        <p class="fw-bold">
+          <%= link_to t('admin.links.new_badge'), new_admin_badge_path, class: "link-secondary text-decoration-none" %>
+        </p>
+
+        <table class="table table-borderless table-hover table-sm">
+          <thead>
+          <tr>
+            <th scope="col"><%= t('.title') %></th>
+            <th scope="col"></th>
+            <th><%= t('.actions') %></th>
+          </tr>
+          </thead>
+          <%= render @badges %>
+        </table>
+      <% else %>
+        <p>You haven't badges</p>
+      <% end %>
+    </div>
   </div>
 </div>
 
