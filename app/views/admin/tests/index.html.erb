@@ -47,12 +47,10 @@
     </div>
 
     <div class="col-5 div-inline">
+      <p class="fw-bold">
+        <%= link_to t('admin.links.new_badge'), new_admin_badge_path, class: "link-secondary text-decoration-none" %>
+      </p>
       <% if @badges.present? %>
-
-        <p class="fw-bold">
-          <%= link_to t('admin.links.new_badge'), new_admin_badge_path, class: "link-secondary text-decoration-none" %>
-        </p>
-
         <table class="table table-borderless table-hover table-sm">
           <thead>
           <tr>

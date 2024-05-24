@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :tests, only: :index do
     post :start, on: :member
   end
+  resources :badges
 
   resources :test_passages, only: %i[ show update ] do
     member do

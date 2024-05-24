@@ -58,6 +58,7 @@ ru:
       welcome: "Добро пожаловать, %{f} %{l} Guru"
 
     badges:
+      rules:
       new:
         header: "Создание нового значка"
       create:
