@@ -30,3 +30,17 @@
   text-align: center;
   color: white;
 }
+
+// Pass/fail test
+.passed{
+  color: green;
+}
+.failed{
+  color: red;
+}
+
+
+#timer{
+  text-align: right;
+  font-size: 40px
+}

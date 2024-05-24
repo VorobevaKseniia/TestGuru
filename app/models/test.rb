@@ -11,7 +11,6 @@ class Test < ApplicationRecord
 
   scope :complete_tests, -> { where(completed: true) }
 
-
   scope :categorized_tests, -> (category) { joins(:category).where(category: { title: category }) }
 
   validates :title, presence: true, uniqueness: { scope: :level }

@@ -1,5 +1,7 @@
 <h1>Passing the <%= @test_passage.test.title %> Test</h1>
+<div id="timer" data-test-time="<%= @test_passage.remaining_time %>">
 
+</div>
 <div id="myBar">
   <div id="myProgress"> 1% </div>
 </div>
@@ -22,6 +24,7 @@
                      id: 'check',
                      disabled: true,
                      data: {question_number: @test_passage.question_number,
-                            number_of_questions: @test_passage.test.questions.count}
+                            number_of_questions: @test_passage.test.questions.count
+                     }
   %></p>
 <% end %>
