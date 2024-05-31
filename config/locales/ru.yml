@@ -38,6 +38,22 @@ ru:
       success: "Gist успешно создан! Ваш Gist %{link}"
       failure: "Во время сохранения gist произошла ошибка"
 
+  tests:
+    index:
+      header: "Доступные тесты"
+      title: "Название"
+      user_badges: "Ваши награды"
+      badges: "Награды"
+      level: "Уровень"
+      questions: "Кол-во вопросов"
+      timer: "Таймер (мин.)"
+      completed: "Состояние теста"
+      actions: "Действия"
+      question: "Вопрос"
+      user: "Пользователь"
+      gist_url: "Ссылка"
+      image: "Изображение"
+
   admin:
     actions:
       show: "Показать"

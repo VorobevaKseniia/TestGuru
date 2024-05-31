@@ -36,6 +36,22 @@ en:
       success: "Gist successfully created! Your gist %{link}"
       failure: "An error occurred while saving gist"
 
+  tests:
+    index:
+      header: "Tests in progress"
+      title: "Title"
+      user_badges: "Your badges"
+      badges: "Badges"
+      level: "Level"
+      questions: "No. of questions"
+      timer: "Timer (min.)"
+      completed: "Test status"
+      actions: "Actions"
+      question: "Question"
+      user: "User"
+      gist_url: "Link"
+      image: "Image"
+
   admin:
     actions:
       show: "Show"

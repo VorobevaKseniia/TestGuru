@@ -26,6 +26,7 @@ class TestsController < ApplicationController
 
   def set_badges
     @badges = current_user.badges
+    @all_badges = Badge.all
   end
 
 end

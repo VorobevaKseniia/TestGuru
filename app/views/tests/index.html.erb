@@ -1,17 +1,17 @@
 <div class="container">
   <h1><%= t('.header') %></h1>
 
-  <div class="col-6 align-self-start">
+  <div class="col-6 align-self-start div-inline">
     <% if @tests.present? %>
       <table class="table table-borderless table-hover">
         <tr>
           <th scope="col" class="sort-by-title pointer">
-            Title
+            <%= t('.title') %>
             <%= octicon 'arrow-up', class: 'text-success hide' %>
             <%= octicon 'arrow-down', class: 'text-success hide' %>
           </th>
-          <th scope="col">Level</th>
-          <th scope="col">Questions</th>
+          <th scope="col"><%= t('.level') %></th>
+          <th scope="col"><%= t('.questions') %></th>
           <th scope="col"></th>
         </tr>
         <%= render @tests %>
@@ -21,12 +21,28 @@
     <% end %>
   </div>
 
+  <div class="col-3 div-inline">
+    <% if @all_badges.present? %>
+      <table class="table table-borderless table-hover table-sm">
+        <thead>
+        <tr>
+          <th scope="col"><%= t('.badges') %></th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <%= render @all_badges %>
+      </table>
+    <% else %>
+      <p>...</p>
+    <% end %>
+  </div>
+
   <div class="col-6 align-self-start">
     <% if @badges.present? %>
       <table class="table table-borderless table-hover table-sm">
         <thead>
         <tr>
-          <th scope="col"><%= t('.title') %></th>
+          <th scope="col"><%= t('.user_badges') %></th>
           <th scope="col"></th>
         </tr>
         </thead>
