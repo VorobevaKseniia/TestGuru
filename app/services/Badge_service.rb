@@ -8,7 +8,7 @@ class BadgeService
 
   def badge_issuance
     Badge.all.each do |badge|
-      if  received?(badge)
+      if  send("#{badge.rule}?", *badge.rule_value == '-' ? nil : badge.rule_value)
         @user.badges << (badge) if !@user.badges.include?(badge)
       end
     end
@@ -16,22 +16,23 @@ class BadgeService
 
   private
 
-    def received?(badge)
-      send("#{badge.rule}?", badge.rule_value)
-    end
-
-    def first_attempt?(test_title)
-    @user.test_passages.where(test_id: @test.id).count == 1 && (@test_passage.passed?) && @test.title == test_title
+    def first_attempt?
+    @user.test_passages.where(test_id: @test.id).count == 1 && (@test_passage.passed?)
   end
 
   def all_tests_in_category?(category_title)
-    Test.categorized_tests(category_title).count ==
-      @user.test_passages.where(succeeded: true, test_id: @user.tests.categorized_tests(category_title)).pluck(:test_id).uniq.count
+    categorized_tests = Test.categorized_tests(category_title).ids
+    check(categorized_tests)
   end
 
   def all_tests_of_level?(test_level)
-    Test.where(level: test_level).count ==
-      @user.test_passages.where(succeeded: true, test_id: @user.tests.where(level: @test.level)).pluck(:test_id).uniq.count
+    level_tests = Test.where(level: test_level).ids
+    check(level_tests)
+  end
+
+  def check(tests_ids_by_rule)
+    user_tests_ids = @user.test_passages.where(succeeded: true, test_id: tests_ids_by_rule).pluck(:test_id).uniq.count
+    tests_ids_by_rule.count == user_tests_ids
   end
 
 end
