@@ -18,6 +18,14 @@ class TestPassage < ApplicationRecord
     current_question.nil?
   end
 
+  def time_out?
+    (Time.now - self.created_at) / 60 >= test.timer
+  end
+
+  def remaining_time
+    (test.timer * 60) - (Time.now - self.created_at)
+  end
+
   def question_number
     test.questions.find_index(current_question) + 1
   end

@@ -12,6 +12,7 @@ import '../utilities/check-password'
 import '../utilities/form_inline'
 import '../utilities/progress-bar'
 import '../utilities/check-check-box'
+import '../utilities/timer'
 
 var jQuery = require("jquery");
 // import jQuery from "jquery";
