@@ -8,7 +8,7 @@ class BadgeService
 
   def badge_issuance
     Badge.all.each do |badge|
-      if  send("#{badge.rule}?", *badge.rule_value == '-' ? nil : badge.rule_value)
+      if  send("#{badge.rule}?", badge.rule_value)
         @user.badges << (badge) if !@user.badges.include?(badge)
       end
     end
@@ -16,7 +16,7 @@ class BadgeService
 
   private
 
-    def first_attempt?
+    def first_attempt?(_param)
     @user.test_passages.where(test_id: @test.id).count == 1 && (@test_passage.passed?)
   end
 
