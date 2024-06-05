@@ -31,16 +31,11 @@
   color: white;
 }
 
-// Pass/fail test
-.passed{
-  color: green;
+.div-inline{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
 }
-.failed{
-  color: red;
-}
-
-
-#timer{
-  text-align: right;
-  font-size: 40px
+.margin{
+  margin-top: 100px;
 }

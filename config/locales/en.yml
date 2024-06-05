@@ -36,6 +36,22 @@ en:
       success: "Gist successfully created! Your gist %{link}"
       failure: "An error occurred while saving gist"
 
+  tests:
+    index:
+      header: "Tests in progress"
+      title: "Title"
+      user_badges: "Your badges"
+      badges: "Badges"
+      level: "Level"
+      questions: "No. of questions"
+      timer: "Timer (min.)"
+      completed: "Test status"
+      actions: "Actions"
+      question: "Question"
+      user: "User"
+      gist_url: "Link"
+      image: "Image"
+
   admin:
     actions:
       show: "Show"
@@ -49,10 +65,31 @@ en:
       logout: "Logout"
       new_question: "New question"
       new_answer: "New answer"
+      new_badge: "New badge"
 
     nav:
       panel: "TestGuru Admin Panel"
       welcome: "Welcome, %{f} %{l} Guru"
+
+    badges:
+      new:
+        header: "Create new badge"
+      create:
+        success: "Badge was successfully created!"
+      update:
+        success: "Badge was successfully updated!"
+      destroy:
+        success: "Badge was successfully deleted!"
+        fail: "There was a glitch during the deletion."
+      show:
+        title: "Title: %{title}"
+        image: "Image: %{image}.png"
+        rule: "Rule: %{rule}"
+        rule_value: "Rule_value: %{rule_value}"
+      edit:
+        header: "Edit %{title} badge"
+      badge:
+        confirm_delete: "Are you sure, delete the badge?"
 
     tests:
       index:
@@ -60,11 +97,13 @@ en:
         title: "Title"
         level: "Level"
         questions: "No. of questions"
+        timer: "Timer (min.)"
         completed: "Test status"
         actions: "Actions"
         question: "Question"
         user: "User"
         gist_url: "Link"
+        image: "Image"
       edit:
         header: "Edit %{title} test"
       new:
@@ -75,13 +114,13 @@ en:
         questions: "Questions"
         actions: "Actions"
       create:
-        success: "Test was successfully created."
+        success: "Test was successfully created!"
       update:
-        success: "Test was successfully updated."
+        success: "Test was successfully updated!"
       form_inline:
         submit: "OK"
       destroy:
-        success: "Test was successfully deleted."
+        success: "Test was successfully deleted!"
       test:
         confirm_delete: "Are you sure, delete the test?"
 
@@ -90,11 +129,11 @@ en:
         header: "Question %{title} of the test"
         answers: "Answers"
       create:
-        success: "Question was successfully created"
+        success: "Question was successfully created!"
       update:
-        success: "Question was successfully updated"
+        success: "Question was successfully updated!"
       destroy:
-        success: "Question was successfully deleted"
+        success: "Question was successfully deleted!"
       question:
         confirm_delete: "Are you sure, delete the question?"
 

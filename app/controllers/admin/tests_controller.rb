@@ -3,6 +3,7 @@ class Admin::TestsController < Admin::BaseController
   before_action :set_tests, only: %i[index update_inline]
   before_action :set_test, only: %i[show edit update destroy start update_inline]
   before_action :set_gists, only: %i[index]
+  before_action :set_badges, only: %i[index]
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
   def index
@@ -50,7 +51,7 @@ class Admin::TestsController < Admin::BaseController
 
   private
   def test_params
-    params.require(:test).permit(:title, :level, :category_id)
+    params.require(:test).permit(:title, :level, :category_id, :timer, :completed)
   end
 
   def set_test
@@ -66,6 +67,10 @@ class Admin::TestsController < Admin::BaseController
   end
   def rescue_with_test_not_found
     render plain: 'Test was not found'
+  end
+
+  def set_badges
+    @badges = Badge.all
   end
 
 end

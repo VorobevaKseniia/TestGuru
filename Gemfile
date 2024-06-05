@@ -48,7 +48,6 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 5.3'
 gem 'octicons_helper'
 
-gem 'paperclip'
 gem 'dragonfly'
 
 group :development, :test do

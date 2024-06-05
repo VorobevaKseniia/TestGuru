@@ -32,7 +32,6 @@
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
-        <option value="paperclip" />
         <option value="rack_profiler:install" />
         <option value="resource" />
         <option value="responders:install" />
@@ -72,7 +71,6 @@
         <option value="migration" />
         <option value="model" />
         <option value="mongoid:devise" />
-        <option value="paperclip" />
         <option value="rack_profiler:install" />
         <option value="resource" />
         <option value="responders:install" />
@@ -280,21 +278,6 @@
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Prints out your Rack middleware stack" fullCommand="middleware" id="middleware" />
-          <RakeTaskImpl id="paperclip">
-            <subtasks>
-              <RakeTaskImpl description="Cleans out invalid attachments" fullCommand="paperclip:clean" id="clean" />
-              <RakeTaskImpl description="find missing attachments" fullCommand="paperclip:find_broken_attachments" id="find_broken_attachments" />
-              <RakeTaskImpl description="Refreshes both metadata and thumbnails" fullCommand="paperclip:refresh" id="refresh" />
-              <RakeTaskImpl id="refresh">
-                <subtasks>
-                  <RakeTaskImpl description="Regenerates fingerprints for a given CLASS (and optional ATTACHMENT). Useful when changing digest" fullCommand="paperclip:refresh:fingerprints" id="fingerprints" />
-                  <RakeTaskImpl description="Regenerates content_type/size metadata for a given CLASS (and optional ATTACHMENT)" fullCommand="paperclip:refresh:metadata" id="metadata" />
-                  <RakeTaskImpl description="Regenerates missing thumbnail styles for all classes using Paperclip" fullCommand="paperclip:refresh:missing_styles" id="missing_styles" />
-                  <RakeTaskImpl description="Regenerates thumbnails for a given CLASS (and optional ATTACHMENT and STYLES splitted by comma)" fullCommand="paperclip:refresh:thumbnails" id="thumbnails" />
-                </subtasks>
-              </RakeTaskImpl>
-            </subtasks>
-          </RakeTaskImpl>
           <RakeTaskImpl description="Restart app by touching tmp/restart.txt" fullCommand="restart" id="restart" />
           <RakeTaskImpl description="Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)" fullCommand="secret" id="secret" />
           <RakeTaskImpl description="Report code statistics (KLOCs, etc) from the application or engine" fullCommand="stats" id="stats" />
